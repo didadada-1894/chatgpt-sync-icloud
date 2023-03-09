@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import ReactDOM from "react-dom";
 
 const Popup = () => {
+  const bg = chrome.extension.getBackgroundPage() || window
   const [count, setCount] = useState(0);
   const [currentURL, setCurrentURL] = useState<string>();
 
@@ -45,6 +46,9 @@ const Popup = () => {
         count up
       </button>
       <button onClick={changeBackground}>change background</button>
+      <button onClick={() => {
+        console.log('========> test')
+      }}> console</button>
     </>
   );
 };

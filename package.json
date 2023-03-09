@@ -1,7 +1,7 @@
 {
-  "name": "chrome-extension-typescript-starter",
+  "name": "chatgpt-sync-icloud",
   "version": "1.0.0",
-  "description": "chrome-extension-typescript-starter",
+  "description": "chatgpt-sync-icloud",
   "main": "index.js",
   "scripts": {
     "watch": "webpack --config webpack/webpack.dev.js --watch",
@@ -14,11 +14,12 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/chibat/chrome-extension-typescript-starter.git"
+    "url": "https://github.com/chibat/chatgpt-sync-icloud.git"
   },
   "dependencies": {
     "react": "^17.0.1",
-    "react-dom": "^17.0.1"
+    "react-dom": "^17.0.1",
+    "tsl-apple-cloudkit": "https://typescriptlibs.org/npm/tsl-apple-cloudkit.tgz"
   },
   "devDependencies": {
     "@types/chrome": "0.0.158",
